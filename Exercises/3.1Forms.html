@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- CSS -->
+    <style>
+        input,textarea{
+            border: black 1.8px solid;
+            border-radius: 5px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        button{
+            border-radius: 8px;  
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Sign up!</h1>
+    </div>
+    <div id="input">
+        <!-- Email Input -->
+        <div id="email">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
+        </div>
+        <!-- Password Input -->
+        <div id="password">
+            <label for="password">Password</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password..." >
+        </div>
+        <!-- Confirm Password Input -->
+        <div id="confirm-pass">
+            <label for="confirm-pass">Confirm Password</label>
+            <br>
+            <input type="password" name="confirm-pass" id="confirm-pass" placeholder="Confirm your password...">
+        </div>
+        <!-- Age Input -->
+        <div id="age">
+            <label for="age">Age</label>
+            <br>
+            <select name="age" id="age">
+                <option value="none">Select Age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <!-- About Text -->
+        <div id="about">
+            <label for="about">Tell us a little about yourself and why you chose us</label>
+            <br>
+            <textarea name="about" id="about" cols="60" rows="5"></textarea>
+        </div>
+        <!-- Checkbox -->
+        <div id="terms">
+            <input type="checkbox" name="consent" id="consent">
+            <label for="consent">I agree to the <a href="#">Terms of Service</a></label>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>
