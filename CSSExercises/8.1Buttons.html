@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+            /* CSS Reset */
+            *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        h2{
+            text-align: center;
+        }
+        /* Background Color */
+        body{
+            background: #2E4661;
+        }
+        /* Button Container Center */
+        .btn_container{
+            max-width: max-content;
+            max-height: 300px;
+            margin: 30px auto
+        }
+        button{
+            margin:5px;
+        }
+        /* Buttons Sizing */
+        .btn_register{
+            width: 120px;
+            height: 40px;
+        }
+        .btn_clear{
+            width:  100px;
+            height: 33px;
+        }
+        .btn_submit{
+            width: 80px;
+            height: 27px;
+        }
+        /* Full & Ghost Button Styling */
+        .btn_full button{
+            border:none;
+        }
+        .btn_round button{
+            border-radius: 15px;
+        }
+        .btn_ghost button{
+            border: 3px solid;
+            background-color: transparent;
+        }
+        /* Register Color #00E474 */
+        /* Clear Color #FF0019 */
+        /* Submit Color #008BDA */
+
+
+        /* Flat & Full Buttons */
+        .btn_flat .btn_full .btn_register{
+            background-color:#00E474 ;
+        }
+        .btn_flat .btn_full .btn_register:hover{
+            background-color:#2eff9a ;
+        }
+        .btn_flat .btn_full .btn_clear{
+            background-color:#FF0019 ;
+        }
+        .btn_flat .btn_full .btn_clear:hover{
+            background-color:#ff364a ;
+        }
+        .btn_flat .btn_full .btn_submit{
+            background-color:#008BDA ;
+        }
+        .btn_flat .btn_full .btn_submit:hover{
+            background-color:#33b4ff ;
+        }
+        /* Register Round Color #FF7100  */
+        /* Clear Round Color #F8CF00 */
+        /* Submit Round Color #617475 */
+
+        /* Round & Full Buttons */
+        .btn_round .btn_full .btn_register{
+            background-color:#FF7100 ;
+        }
+        .btn_round .btn_full .btn_register:hover{
+            background-color:#ff8e32 ;
+        }
+        .btn_round .btn_full .btn_clear{
+            background-color:#F8CF00 ;
+        }
+        .btn_round .btn_full .btn_clear:hover{
+            background-color:#ffe043 ;
+        }
+        .btn_round .btn_full .btn_submit{
+            background-color:#617475 ;
+        }
+        .btn_round .btn_full .btn_submit:hover{
+            background-color:#a2b0b1 ;
+        }
+        /* Flat & Ghost Buttons */
+        .btn_flat .btn_ghost .btn_register{
+            border-color:#00E474 ;
+        }
+        .btn_flat .btn_ghost .btn_register:hover{
+            background-color:#00E474 ;
+        }
+        .btn_flat .btn_ghost .btn_clear{
+            border-color:#FF0019 ;
+        }
+        .btn_flat .btn_ghost .btn_clear:hover{
+            background-color:#FF0019 ;
+        }
+        .btn_flat .btn_ghost .btn_submit{
+            border-color:#008BDA ;
+        }
+        .btn_flat .btn_ghost .btn_submit:hover{
+            background-color:#008BDA ;
+        }
+        /* Round & Ghost Buttons */
+        .btn_round .btn_ghost .btn_register{
+            border-color:#FF7100 ;
+        }
+        .btn_round .btn_ghost .btn_register:hover{
+            background-color:#FF7100 ;
+        }
+        .btn_round .btn_ghost .btn_clear{
+            border-color:#F8CF00 ;
+        }
+        .btn_round .btn_ghost .btn_clear:hover{
+            background-color:#F8CF00 ;
+        }
+        .btn_round .btn_ghost .btn_submit{
+            border-color:#617475 ;
+        }
+        .btn_round .btn_ghost .btn_submit:hover{
+            background-color:#617475 ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Flat</h2>
+        <!-- Button Container -->
+        <div class="btn_container btn_flat">
+            <span class="btn_full">
+                <button class="btn_register">Register</button>
+                <button class="btn_clear">Clear</button>
+                <button class="btn_submit">Submit</button>
+            </span>
+        </div>
+    </div>
+    <div>
+        <h2>Round</h2>
+        <!-- Button Container -->
+        <div class="btn_container btn_round">
+            <span class="btn_full">
+                <button class="btn_register">Register</button>
+                <button class="btn_clear">Clear</button>
+                <button class="btn_submit">Submit</button>
+            </span>
+        </div>
+        <h2>Flat Ghost</h2>
+        <!-- Button Container -->
+        <div class="btn_container btn_flat">
+            <span class="btn_ghost">
+                <button class="btn_register">Register</button>
+                <button class="btn_clear">Clear</button>
+                <button class="btn_submit">Submit</button>
+            </span>
+        </div>
+    </div>
+    <div>
+        <h2>Round Ghost</h2>
+        <!-- Button Container -->
+        <div class="btn_container btn_round">
+            <span class="btn_ghost">
+                <button class="btn_register">Register</button>
+                <button class="btn_clear">Clear</button>
+                <button class="btn_submit">Submit</button>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

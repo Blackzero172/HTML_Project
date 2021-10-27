@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning v.3</title>
+    <style>
+        /* Div Setup */
+        .container div{
+            border:4px solid black;
+            position: absolute;
+            background: white;
+        }
+        /* Container Setup */
+        .container{
+            width:1000px;
+            height: 1000px;
+            position: relative;
+        }
+        /* Div Positioning */
+        #div-1{
+            width: 250px;
+            height: 250px;
+        }
+        #div-2{
+            width: 250px;
+            height: 250px;
+            top: 150px;
+            left: 100px;
+        }
+        #div-3{
+            width: 600px;
+            height: 200px;
+            top: 350px;
+        }
+        #div-4{
+            width: 100px;
+            height: 600px;
+            left:450px
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <div id="div-1">
+            div one
+        </div>
+        <div id="div-2">
+            div two
+        </div>
+        <div id="div-3">
+            div three
+        </div>
+        <div id="div-4">
+            div four
+        </div>
+    </div>
+</body>
+</html>
