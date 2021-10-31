@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container{
+            display:flex;
+            flex-direction: row;
+            /* Aligns on Cross Axis */
+            align-items: center;
+            /* Main-Axis Align */
+            justify-content: space-between;
+            height: 10vh;
+        }
+        .flex-container div{
+            flex: 0;
+            padding: 5vh;
+            text-align: center;
+        }
+        .box1{
+            background: red;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box1">
+            
+        </div>
+        <div class="box2">
+            
+        </div>
+        <div class="box3">
+            
+        </div>
+    </div>
+</body>
+</html>

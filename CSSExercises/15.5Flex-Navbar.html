@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Responsive Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #0071bd;
+        }
+        .flex-container{
+            background: lightgray;
+            border: 2px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .flex-container a{
+            padding: 5px;
+        }
+        .title{
+            flex: 1;
+        }
+        @media(max-width: 768px){
+            .flex-container{
+            background: lightgray;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <a href="" class="title"><h1>Appleseeds</h1></a>
+        <a href=""><h2>Home</h2></a>
+        <a href=""><h2>About</h2></a>
+        <a href=""><h2>Portfolio</h2></a>
+        <a href=""><h2>Contact</h2></a>
+    </div>
+</body>
+</html>
