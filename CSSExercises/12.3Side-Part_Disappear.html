@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Float Layout</title>
+    <title>Sidebar Disappear</title>
     <style>
         /* Background color + Font change */
         body{
@@ -16,10 +16,10 @@
         }
         /* Center Container */
         .container{
-            max-width: 1500px;
+            max-width: 100vw;
             margin: auto;
             overflow:auto;
-            max-height: 1080px;
+            max-height: 100vh;
         }
         header{
             border:3px solid black;
@@ -75,6 +75,14 @@
             text-align: center;
             border:3px solid black;
 
+        }
+        @media(max-width:768px){
+            aside {
+                display: none;
+            }
+            section{
+                width: 100%;
+            }
         }
     </style>
 </head>
