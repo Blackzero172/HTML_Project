@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid black; /* If you want dots under the hoverable text */
+            color: purple;
+        }
+        
+        /* Tooltip text */
+        .tooltip::after {
+            content: attr(data-tooltip);
+            visibility: hidden;
+            width: 300px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            
+            /* Position the tooltip text */
+            position: absolute;
+            left: -74px;
+            top: -40px;
+            z-index: 1;
+        }
+        
+        .tooltip:hover::after {
+            visibility: visible;
+        }
+        </style>
+        
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur <span class="tooltip" data-tooltip="this is the 1st tooltip">adipisicing</span> elit. Voluptates, cum? Architecto provident sed, eveniet libero commodi doloremque eum tempore repellendus, sequi tempora labore eius cupiditate, temporibus maiores ab. Quibusdam quos rerum reiciendis id. Ea praesentium placeat delectus exercitationem quas voluptatem aspernatur hic iusto reiciendis inventore fuga quaerat voluptatum dolor doloremque iure, <span class="tooltip" data-tooltip="this is the 2nd tooltip">totam</span>, minus pariatur accusantium dolore officiis ut itaque! Error numquam quo obcaecati, nulla cum, voluptatibus dolore ut tempore temporibus saepe qui quisquam, soluta nam iure harum mollitia fuga. 
+    <span class="tooltip" data-tooltip="this is the 3rd tooltip">Minima</span> dolorum sit, laborum cum rem sunt voluptas dignissimos asperiores magnam harum assumenda, magni non. Omnis cupiditate perspiciatis labore cum consequatur officiis laudantium impedit necessitatibus fuga fugit ab corrupti laboriosam minima, dolore est aut dignissimos, temporibus architecto ad! Officiis corrupti voluptate repellat magnam molestias. Labore eos vitae veritatis quam quia, ratione exercitationem commodi, fugiat qui iste debitis tenetur tempora velit facere esse aut nemo quae architecto, omnis repellendus totam nobis? Ipsum odio cupiditate nihil beatae facere iure repudiandae dolore. Mollitia dicta expedita exercitationem odit magni tempore architecto reiciendis voluptatum soluta fuga deleniti doloremque ea at libero voluptatem ipsum delectus vel eaque hic atque praesentium, non ducimus. Ab ipsa nesciunt sit deleniti ducimus <span class="tooltip" data-tooltip="this is the 4th tooltip">architecto</span> perspiciatis nobis delectus commodi sed, quos quod, libero ipsam tempora dignissimos itaque facilis odit nihil animi blanditiis repudiandae! Excepturi nostrum voluptas error assumenda molestiae facere mollitia repellat praesentium magnam laborum architecto vitae porro quam, quas saepe iusto similique exercitationem eos temporibus cumque non libero adipisci? Cupiditate, expedita nemo. Quo, neque quibusdam! Sed quos quia eaque hic necessitatibus tempora?</p>
+</body>
+</html>
