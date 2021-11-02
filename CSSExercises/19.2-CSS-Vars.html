@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        :root{
+            --border-color:#333;
+        }
+        /* Background color + Font change */
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:darkturquoise;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        /* Center Container */
+        .container{
+            max-width: 1500px;
+            margin: auto;
+            overflow:auto;
+            max-height: 1080px;
+        }
+        header{
+            border:3px solid var(--border-color);
+
+        }
+        header h1{
+            text-align: center;
+        }
+        aside{
+            margin-left: 10px;
+            height: 80%;
+        }
+        /* List Styling */
+        aside ul{
+            list-style: none;
+            border:2px var(--border-color) solid;
+            border-radius: 10px;
+            width: 28%;
+            padding: 20px;
+            float:left;
+            border:3px solid var(--border-color);
+        }
+        /* List item Styling */
+        aside ul li{
+            font-size: 24px;
+            border-bottom: var(--border-color) dotted 2px;
+            margin-top: 15px;
+            padding-bottom: 2px;
+            height:50px
+        }
+        /* Remove last item's bottom border */
+        aside ul li:last-child{
+            border-bottom: none;
+        }
+        /* Change Link Behaviour */
+        aside ul li a{
+            color: var(--border-color);
+            text-decoration: none;
+        }
+        aside ul li a:hover{
+            color:chocolate;
+        }
+        section{
+            width: 68%;
+            float:right;
+            border:3px solid var(--border-color);
+        }
+        /* Float Clear */
+        .clr{
+            clear:both;
+        }
+        footer p{
+            text-align: center;
+            border:3px solid var(--border-color);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for Styling -->
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to my Website</h1>
+        </header>
+        <!-- Navigation Bar -->
+        <aside>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+        <!-- Blog posts -->
+        <main>
+            <section>
+                <article>
+                    <h2>Article One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt laudantium perspiciatis at cum? Optio quisquam quae omnis vel temporibus?</p>
+                </article>
+                <article>
+                    <h2>Article Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt laudantium perspiciatis at cum? Optio quisquam quae omnis vel temporibus?</p>
+                </article>
+                <article>
+                    <h2>Article Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt laudantium perspiciatis at cum? Optio quisquam quae omnis vel temporibus?</p>
+                </article>
+            </section>
+        </main>
+        <!-- Float Clear -->
+        <div class="clr"></div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy;Copyrights Reserved 2021 , all copyright and trademarks are held by Google Limited.</p>
+        </footer>
+    </div>
+</body>
+</html>
