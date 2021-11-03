@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics</title>
+    <style>
+        .grid{
+            display:grid;
+            grid-template-columns: repeat(4,auto);
+            gap: 0.5rem;
+        }
+        .red{
+            grid-column: 1 / span 2;
+            background:red;
+        }
+        .blue{
+            grid-column: 3 / span 2;
+            background:blue;
+        }
+        .green{
+
+            background:green;
+        }
+        .purple{
+            grid-column: 2 / span 3;
+            background: purple;
+        }
+        .yellow{
+            grid-column: 1 / span 4;
+            background: yellow;
+        }
+        div{
+            padding: 3rem;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+</html>

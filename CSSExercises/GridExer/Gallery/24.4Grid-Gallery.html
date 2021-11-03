@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery</title>
+    <style>
+        .grid{
+            margin: 80px;
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            gap: 0.5rem;
+        }
+        img{
+            width: 100%;
+        }
+        @media(max-width:768px){
+            .grid{
+            margin: 40px;
+            grid-template-columns: repeat(3,auto);
+            }
+        }
+        @media (max-width:500px){
+            .grid{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <img src="./images/gal-1.jpeg" alt="">
+        <img src="./images/gal-2.jpeg" alt="">
+        <img src="./images/gal-3.jpeg" alt="">
+        <img src="./images/gal-5.jpeg" alt="">
+        <img src="./images/gal-6.jpeg" alt="">
+        <img src="./images/gal-7.jpeg" alt="">
+        <img src="./images/gal-8.jpeg" alt="">
+        <img src="./images/gal-9.jpeg" alt="">
+        <img src="./images/gal-10.jpeg" alt="">
+        <img src="./images/gal-11.jpeg" alt="">
+        <img src="./images/gal-12.jpeg" alt="">
+        <img src="./images/gal-13.jpeg" alt="">
+        <img src="./images/gal-14.jpeg" alt="">
+    </div>
+</body>
+</html>

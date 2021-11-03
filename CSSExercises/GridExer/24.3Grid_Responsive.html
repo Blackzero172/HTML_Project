@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsive</title>
+    <style>
+        .grid{
+            display:grid;
+            grid-template-areas: 
+            'red red blue blue'
+            'green purple purple purple'
+            'yellow yellow yellow yellow';
+            gap: 1rem;
+        }
+        .red{
+            grid-area: red;
+            background:red;
+        }
+        .blue{
+            grid-area: blue;
+            background:blue;
+        }
+        .green{
+            grid-area: green;
+            background:green;
+        }
+
+        .purple{
+            grid-area: purple;
+            background: purple;
+        }
+        .yellow{
+            grid-area: yellow;
+            background: yellow;
+        }
+        div{
+            padding:3rem;
+            border-radius: 15px;
+        }
+        @media(max-width:500px){
+            .grid{
+                grid-template-areas: 
+                'red'
+                'blue'
+                'green'
+                'purple'
+                'yellow';
+            }
+            .purple-2{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+</html>

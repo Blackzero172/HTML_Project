@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+    <style>
+        header,section,aside,div,footer{
+            border: 1px #333 solid;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'content content sidebar'
+            'box-1 box-2 box-2'
+            'box-3 box-3 box-3'
+            'footer footer footer';
+            gap:1rem;
+        }
+        .header{
+            grid-area: header;
+        }
+        .content{
+            grid-area:content;
+        }
+        .sidebar{
+            grid-area:sidebar;
+        }
+        .box-1{
+            grid-area: box-1;
+        }
+        .box-2{
+            grid-area: box-2;
+        }
+        .box-3{
+            grid-area: box-3;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        @media(max-width:500px){
+            .container{
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+          <h1>My Website</h1>
+        </header>
+   
+        <!-- Content -->
+        <section class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi
+            fuga iure tempora? Veniam provident dolorem voluptas soluta sed qui
+            esse eaque quos commodi impedit. Ducimus mollitia quidem aperiam
+            repellendus, in eos deleniti ad laboriosam. Dolore harum obcaecati
+            quod iure, repudiandae ab iste facilis fuga aliquid ullam
+            necessitatibus reprehenderit velit? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Nostrum quidem beatae eaque? Fugit porro
+            explicabo iusto ut illo incidunt eveniet soluta ab sed temporibus?
+            Totam quasi facilis corrupti temporibus
+          </p>
+        </section>
+   
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Some Company</li>
+            <li>50 Main st. Boston MA</li>
+            <li>something@something.com</li>
+            <li>555-555-5555</li>
+          </ul>
+        </aside>
+   
+        <!-- Box 1 -->
+        <div class="box-1">
+          <h3>Box 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt
+            maxime optio consequuntur aliquid. Porro, fugiat numquam explicabo
+            eveniet natus ea? Dolores provident sequi necessitatibus deserunt eos,
+            cum libero ut?
+          </p>
+        </div>
+   
+        <!-- Box 2 -->
+        <div class="box-2">
+          <h3>Box 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt
+            maxime optio consequuntur aliquid. Porro, fugiat numquam explicabo
+            eveniet natus ea? Dolores provident sequi necessitatibus deserunt eos,
+            cum libero ut?
+          </p>
+        </div>
+   
+        <!-- Box 3 -->
+        <div class="box-3">
+          <h3>Box 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt
+            maxime optio consequuntur aliquid. Porro, fugiat numquam explicabo
+            eveniet natus ea? Dolores provident sequi necessitatibus deserunt eos,
+            cum libero ut?
+          </p>
+        </div>
+   
+        <!-- Footer -->
+        <footer class="footer"><p>Copyright &copy; 2019</p></footer>
+      </div>
+</body>
+</html>
